@@ -96,6 +96,90 @@ function myFunction(p1, p2) {
 
 
 
+# Function Invocation
+The code inside the function will execute when "something" invokes (calls) the function:
+
+1- When an event occurs (when a user clicks a button)
+2- When it is invoked (called) from JavaScript code
+3- Automatically (self invoked)
+
+
+# Function Return
+- When JavaScript reaches a return statement, the function will stop executing.
+
+- If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+
+- Functions often compute a return value. The return value is "returned" back to the "caller":
+
+# Example
+Calculate the product of two numbers, and return the result:
+
+var x = myFunction(4, 3);   // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+  return a * b;             // Function returns the product of a and b
+}
+
+
+
+# Why Functions?
+* You can reuse code: Define the code once, and use it many times.
+
+* You can use the same code many times with different arguments, to produce different results.
+
+# Example
+Convert Fahrenheit to Celsius:
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+
+
+
+# The () Operator Invokes the Function
+* Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+
+* Accessing a function without () will return the function object instead of the function result.
+
+# Example
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+
+
+
+# Functions Used as Variable Values
+Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+
+
+# Functions Used as Variable Values
+Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+
+
+# JavaScript Operators:
+
+#JavaScript Arithmetic Operators:
+Arithmetic operators are used to perform arithmetic on numbers:
+
+Operator	                                 Description
++	                                         Addition
+-	                                         Subtraction
+*	                                         Multiplication
+**	                                      Exponentiation (ES2016)
+/                                       	Division
+%	                                        Modulus (Division Remainder)
+++	                                      Increment
+--	                                      Decrement
+
+
+
+
+
+
+
+
 
 :smiley:
 
